@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    background: rgb(22, 22, 22);
+    color: gray;
+    scroll-behavior: smooth;
+}
+nav {
+    width: 98vw;
+    height: 32vh;
+}
+
+ul {
+    display: flex;
+justify-content:space-between;    
+text-decoration: none;
+
+}
+
+li {
+   
+    list-style: none;
+    font-size: 6vh;
+    /* font-family: 'Special Elite', cursive; */
+    font-weight:20px ;
+    font-family: 'Fredericka the Great', cursive;
+transition: 3s;
+}
+
+li:hover{
+    font-size: 8vh;
+    /* color:saddlebrown; */
+    color: white;
+
+
+}
+li a{
+    text-decoration: none;
+}
+li a:visited{
+    color: white;
+}
+#fixedLi{
+    position: fixed;
+margin-left: 90vw;
+margin-top: 55px;
+}
+
+li img{
+    width: 200px;
+    height: auto;
+    /* position: sticky; */
+}
+
+#jordanBG{
+    background-image: url(../images/InkedOpenHandJORDAN_-RE.jpg);
+    background-attachment: fixed;
+   background-size: cover;
+    width: 98.8vw;
+    height: 80vh;
+    margin-bottom: 30vh;
+}
+h4{
+    color: white;
+}
+#dunksTitle{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 14vh;
+    text-align: center;
+}
+
+#dunks{
+    width: 98.5vw;
+    height: 65vh;
+    background-image: url(../images/black\ wall\ collection.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   
+    
+}
+
+#dunksContainer {
+    text-align: center;
+    margin-top: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* margin: 10px; */
+    transition: 7s;
+}
+#dunksContainer:hover{
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 0.61) , black); */
+    background-color: rgba(255, 255, 255, 0.61);
+}
+
+
+#dunksContainer img{
+    /* border: rgba(255, 0, 0, 0.39) 3px solid; */
+    border: solid black 1px;
+    
+    /* border-radius: 40%; */
+  
+    
+}
+
+
+
+
+
+#dunksContainer h1 {
+    font-family: 'Indie Flower', cursive;
+    -webkit-text-stroke: 1px ;
+font-size: 30px;
+    font-family: sans; color: black;
+    
+}
+#dunksContainer h3 {
+    font-family: 'Indie Flower', cursive;
+    /* -webkit-text-stroke: 1px rgba(255, 0, 0, 0.39);  */
+    /* background-color: rgba(255, 255, 255, 0.548); */
+    color: black;
+   
+}
+#dunksContainer h3:hover {
+    font-family: 'Indie Flower', cursive;
+    /* -webkit-text-stroke: 1px rgba(255, 0, 0, 0.39);  */
+    /* background-color: rgba(255, 255, 255, 0.548); */
+    color: black;
+    border-bottom: black 2px solid;
+   
+}
+.shoesCards h5{
+  color: black;
+  font-family: monospace;
+font-size: 15px;
+  
+}
+
+
+.shoesCards{
+  position: relative;
+    padding: 35px;
+    background-color: rgba(128, 128, 128, 0.61);
+    border: 2px black solid;
+    margin: 20px;
+
+
+}
+
+.theSecPic {
+  position: absolute;
+  left:35px;
+}
+.theSecPic:hover{
+  opacity: 0;
+}
+.addToCartBtn{
+    padding: 10px;
+}
+.removeFromCartBtn{
+    padding: 10px
+}
+.removeFromCartBtn:hover{
+    padding: 5;
+    font-size: 15px;
+    color: white;
+   border-bottom: 2px solid white;
+   border-top: 2px solid white;
+    font-family: 'Indie Flower', cursive;
+background-color: black;
+font-weight: 10px;
+cursor:pointer;
+}
+.addToCartBtn:hover{
+    padding: 5;
+    font-size: 15px;
+    color: white;
+   border-bottom: 2px solid white;
+   border-top: 2px solid white;
+    font-family: 'Indie Flower', cursive;
+background-color: black;
+font-weight: 10px;
+cursor:pointer;
+}
+footer {
+  margin-top: 60px;
+  font-family: "Indie Flower", cursive;
+background-color: rgba(0, 0, 0, 0.466);
+color: white;
+}
+
+#myAnimaDiv{
+    display: flex;
+    justify-content: center;
+    }
+    #myAnima{
+        width: 150px;
+        height: auto;
+      
+        animation-name: myJordan;
+      animation-duration: 8s;
+      animation-delay: 3s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+    }
+    @keyframes myJordan {
+        0% {
+            transform: rotateZ(0deg);
+          }
+          100% {
+            transform: rotateZ(360deg);
+          }
+        }
+
+        @media screen and (max-width:426px){
+          .theSecPic{
+            left : 63px;
+           }
+  nav {
+    width: 100%;
+    height: 32vh;
+    
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  
+  li {
+    list-style: none;
+    font-weight: 20px;
+    font-style: initial;
+    font-family: "Fredericka the Great", cursive;
+    transition: 3s;
+  }
+
+li a{
+font-size: 10px;
+  }
+  
+ 
+  #jordanBG {
+    background-image: url(../images/InkedOpenHandJORDAN_-RE.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 30vh;
+  }
+  #fixedLi{
+    display:none;
+  }
+  #A1s {
+    display: none;
+    width: fit-content;
+    
+    height: 65vh;
+    background-image: url(../images/black\ wall\ collection.jpg);
+    background-repeat: no-repeat;
+}
+#A1sTitle {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 4vh;
+  text-align: center;
+}
+
+
+.shoesCards{
+  width :200px
+}
+.shoesCards img{
+  width:140px;
+  height: 130px;
+}
+}
+
+@media screen and (min-width:768px) and (max-width:1400px) {
+  li a{
+    font-size: 4vh;
+  }
+  #fixedLi{
+    display: none;
+  }
+  
+}

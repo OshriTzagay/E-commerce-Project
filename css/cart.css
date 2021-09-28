@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    background: rgb(22, 22, 22);
+    color: gray;
+    scroll-behavior: smooth;
+}
+nav {
+    width: 98vw;
+    height: 32vh;
+}
+
+ul {
+    display: flex;
+justify-content:space-between;    
+text-decoration: none;
+
+}
+
+li {
+   
+    list-style: none;
+    font-size: 6vh;
+    /* font-family: 'Special Elite', cursive; */
+    font-weight:20px ;
+    font-family: 'Fredericka the Great', cursive;
+
+}
+
+li:hover{
+    font-size: 50px;
+    /* color:saddlebrown; */
+    color: white;
+
+
+}
+li a{
+    text-decoration: none;
+    transition: 3s;
+}
+li a:visited{
+    color: white;
+}
+li a:hover{
+font-size: 7vh;
+}
+
+#cartTitle{
+    display: flex;
+    justify-content: center;
+    height: 18vh;
+}
+#cartTitle h1{
+    font-family: 'Fredericka the Great', cursive;
+
+    word-spacing: 10px;
+    font-size: 8vh;
+    letter-spacing: 3px;
+
+}
+#cartTitle h1:hover{
+    border-top: whitesmoke 7px ridge;
+    border-bottom: whitesmoke 7px ridge;
+    border-right: whitesmoke 0px ridge;
+    border-left: whitesmoke 0px ridge;
+}
+span{
+    color : white
+}
+#container{
+display: flex;
+justify-content: flex-start;
+}
+#theTable{
+width:98.8vw;
+height: 50vh;
+background-color: hsla(0, 0%, 96%, 0.096);
+
+}
+
+th{
+    font-family: 'Indie Flower', cursive;
+font-size: 5vh;
+border:3px solid black
+}
+td {
+    border: black 3px solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vh;
+}
+#totalPrice h1{
+    height: 200px;
+    font-size: 8vh;
+}
+
+
+@media screen and (max-width:426px){
+  nav {
+    width:fit-content;
+    height: 30vh;
+    
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  li{
+      height: 200px;
+  }
+  
+
+
+li a{
+font-size: 3vh;
+  }
+  #theTable{
+    width:95.8vw;
+    height: 40vh;
+    background-color: hsla(0, 0%, 96%, 0.096);
+    
+    }
+    td img{
+        width: 100px;
+        height: 100px;
+    }
+    img{
+        width: 150px;
+        height: 150px;
+    }
+    #cartTitle{
+        display: flex;
+        justify-content: center;
+        height: 18vh;
+        text-align: center;
+    }
+    #cartTitle h1{
+        font-family: 'Fredericka the Great', cursive;
+    
+        word-spacing: 5px;
+        font-size: 4vh;
+        letter-spacing: 3px;
+    
+    }
+    #theTable{
+        width:90%;
+        height: 50vh;
+        background-color: hsla(0, 0%, 96%, 0.096);
+        
+        }
+        
+        th{
+            font-family: 'Indie Flower', cursive;
+        font-size: 4vh;
+        border:3px solid black
+        }
+        td {
+            border: black 3px solid;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2vh;
+        }
+        #totalPrice h1{
+            height: 200px;
+            font-size: 5vh;
+        }
+        
+        
+        
+}
+
+
+@media screen and (max-width:426px){
+     ul{
+         width: 100%;
+        font-size: 10px;
+          }
+
+          li a{
+              font-size: 11px;
+          }
+          nav{
+              width: 100%;
+          }
+}
+
+@media screen and (min-width:768px) and (max-width:1440px){
+    li a{
+        font-size: 15px;
+    }
+    ul{
+        width: 100%;
+       font-size: 10px;
+         }
+}
+@media screen and (min-width:428px)and (max-width:768px){
+    li a{
+        font-size: 15px;
+    }
+    ul{
+        width: 100%;
+       font-size: 10px;
+         }
+}
